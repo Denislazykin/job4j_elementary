@@ -1,6 +1,7 @@
 package ru.job4j;
 
 import org.junit.Test;
+import ru.job4j.condition.Print;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
@@ -14,6 +15,6 @@ public class PrintTest {
         ByteArrayOutputStream out = new ByteArrayOutputStream();
         System.setOut(new PrintStream(out));
         Print.main(null);
-        assertThat(out.toString(), is("Сегодня я молодец!"));
+        assertThat(out.toString(), is("??????? ? ???????!"));
     }
 }
